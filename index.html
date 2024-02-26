@@ -1,0 +1,43 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+
+<div>
+  <form action="#">
+    <div>
+      <label for="pColor1">Player 1 color</label>
+      <input 
+      type="text" 
+      name="pColor1" 
+      id="pColor1"
+      placeholder="teal" 
+      required>
+    </div>
+    <!-- -->
+    <div>
+      <label for="pColor2">Player 2 color</label>
+      <input 
+      type="text" 
+      name="pColor2" 
+      id="pColor2"
+      placeholder="tomato" 
+      required>
+    </div>
+    <!-- -->
+    <div>
+      <button type="submit" id="startGame">Start Game!</button> <!-- Once the server question is answered, the form can be sent to a specific location -->
+    </div>
+  </form>
+</div>
+  <!-- -->
+<div id="game"></div>
+  <table id="board"></table>
+</div>
+
+<script src="connect4.js"></script>
+
+</body>
+</html>
